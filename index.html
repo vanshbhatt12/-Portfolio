@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vansh - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 20vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+        }
+
+        .thirdSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .thirdSection .box1 {
+            background: white;
+            width: 70vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .thirdSection .vertical1 {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+        }
+
+        .vertical-title-project {
+            position: relative;
+            top: 100px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc-project {
+            position: relative;
+            top: 110px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        .fourthSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+        }
+
+        .fourthSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .fourthSection .box2 {
+            background: white;
+            width: 85vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .fourthSection .vertical2 {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 90px;
+        }
+
+        .vertical-title-skill {
+            position: relative;
+            top: 100px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc-skill {
+            position: relative;
+            top: 110px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vansh's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hey there! My name is <span class="purple">Vansh</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button
+                        onclick="location.href='https://drive.google.com/drive/folders/1CGcbeCXuNTrI6xK8qUHFRMtUXEEVfwUF?usp=sharing';"
+                        class="btn">Download Resume</button>
+                    <button onclick="location.href='https://github.com/vanshbhatt12';" class="btn">Github</button>
+                    <button onclick="location.href='https://www.linkedin.com/in/vansh-bhatt-5b2455226/';"
+                        class="btn">LinkedIn</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="portfolio photo.jpg" alt="">
+            </div>
+        </section>
+
+        <hr>
+
+    <!--    <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Web Development Intern at CodSoft
+                    </div>
+                    <div class="vertical-desc">
+                        This four-week internship provided a valuable opportunity to solidify my understanding of the
+                        technologies I had previously learned in college. I successfully completed all assigned projects
+                        and tasks on time, further enhancing my practical knowledge and professional skills.
+                    </div>
+                </div>
+                
+            </div>
+
+        </section> -->
+
+        
+
+        <section class="thirdSection">
+            <h1>Projects</h1>
+
+            <div class="box1">
+                <div class="vertical1">
+                    <div class="vertical-title-project">
+                        Mental Health Analysis using Machine Learning
+                    </div>
+                    <div class="vertical-desc-project">
+                        This project employs a 10-point scale to assess an individual's mental well-being. The assessment considers various factors that may influence mental health, including family history, environment, and sex.
+                    </div>
+                </div>
+                <div class="vertical1">
+                    <div class="vertical-title-project">
+                        File Storage System using Hybrid Cryptography
+                    </div>
+                    <div class="vertical-desc-project">
+                        This project leverages a hybrid cryptographic approach, combining the strengths of symmetric and asymmetric encryption. It utilizes an automatic logic generator to enhance security and employs Fernet, a recognized cryptographic tool, to achieve robust data protection.
+                    </div>
+                </div>
+                <div class="vertical1">
+                    <div class="vertical-title-project">
+                        Face Recognition attendance System using Python
+                    </div>
+                    <div class="vertical-desc-project">
+                        This Python application implements image recognition to automate attendance recording in an Excel spreadsheet.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="fourthSection">
+            <h1>Skills</h1>
+
+            <div class="box2">
+                <div class="vertical2">
+                    <div class="vertical-title-skill">
+                        Python
+                    </div>
+                </div>
+                <div class="vertical2">
+                    <div class="vertical-title-skill">
+                        Java
+                    </div>
+                </div>
+                <div class="vertical2">
+                    <div class="vertical-title-skill">
+                        Android
+                    </div>
+                </div>
+                <div class="vertical2">
+                    <div class="vertical-title-skill">
+                        Machine Learning
+                    </div>
+                </div>
+                <div class="vertical2">
+                    <div class="vertical-title-skill">
+                        Data Structures
+                    </div>
+                </div>
+                <div class="vertical2">
+                    <div class="vertical-title-skill">
+                        Sql
+                    </div>
+                </div>
+                <div class="vertical2">
+                    <div class="vertical-title-skill">
+                        Django
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Vansh's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+
+                    <li>About</li>
+                    <li>Currently pursuing B.tech in IT from Noida Institute of Engineering and Technology.</li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+
+                    <li>Services</li>
+                    <li>Fullstack, Android, Machine Learning</li>
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Contact</li>
+                    <li>engr.vansh.bhatt@gmail.com 9315181903</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyrights &#169; vanshsportfolio.com
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Android', 'UI/UX Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
